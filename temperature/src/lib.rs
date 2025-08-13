@@ -1,12 +1,16 @@
+#[must_use]
 pub fn fahrenheit_to_celsius(f: f64) -> f64 {
     (f - 32.0) * 5.0 / 9.0
 }
-
+#[must_use]
 pub fn celsius_to_fahrenheit(c: f64) -> f64 {
     (c * 9.0 / 5.0) + 32.0
 }
 
 #[cfg(test)]
+// These tests are simple and strict equality comparison works on my laptop.
+// I'm not gonna get into the nuances of float comparisons for this simple exercise.
+#[allow(clippy::float_cmp)]
 mod tests {
     use super::*;
 
