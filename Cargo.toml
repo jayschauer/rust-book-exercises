@@ -1,3 +1,3 @@
 [workspace]
 resolver = "3"
-members = [ "christmas", "fibonacci", "guessing_game","hello_world", "temperature"]
+members = [ "christmas", "fibonacci", "get-dependencies", "guessing_game","hello_world", "temperature"]
